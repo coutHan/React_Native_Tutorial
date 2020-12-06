@@ -19,7 +19,6 @@ const ScheduleScreen = ({navigation}) => {
     ...json,
     courses: Object.values(json.courses)
   });
-  
   useEffect(() => {
     const db = firebase.database().ref();
     const handleData = snap => {
